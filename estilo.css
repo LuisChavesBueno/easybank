@@ -1,0 +1,933 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+}
+
+:root {
+    --azul: #6BA9AD;
+    --verme: #31C471;
+}
+
+#repositorio{
+    position: fixed;
+    top: 90%;
+    background-color: #800303;
+    font-weight: 700;
+    padding: 15px 60px;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+}
+
+#repositorio:hover {
+
+    border-radius: 0px 30px 0px 30px;
+}
+
+header {
+    background-color: #fff;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 60px;
+    position: relative;
+    z-index: 2; 
+}
+
+header nav {
+    display: flex; 
+}
+
+header  ul{
+    display: flex;
+    
+    align-items: center;
+    list-style: none;
+    font-size: 13pt;
+    margin-right: 250px;
+}
+
+
+header ul li{
+    margin-right: 10px;
+}
+
+header ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: rgb(143, 143, 143);
+}
+
+header ul li a:hover {
+    color: black;
+}
+
+header span {
+    background-image: linear-gradient(to right, var(--verme), var(--azul));
+    font-weight: 700;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s; 
+}
+
+header span:hover {
+    background-image: linear-gradient(to right, #31c471c7, #6ba7adcb);
+}
+
+header #menu{
+    display: none;
+}
+
+main{
+    margin-top: 80px;
+}
+
+main #comeco {
+    display: flex;
+    background-image: url(img/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 700px -100px;
+    position: relative;
+    z-index: 1;
+}
+
+main #comeco img {
+    position: relative;
+    bottom: 50px;
+    right:  20px;
+    width: 600px;
+}
+
+main #comeco div{
+   margin: 100px 120px;
+   
+}
+
+main #comeco div  h1{
+    padding-bottom: 30px;
+    font-size: 50px;
+    max-width: 400px;
+    font-weight: 40;
+}
+
+main #comeco div p{
+    color: #6b6b6b;
+}
+
+main #comeco div button{
+    margin-top: 30px;
+    background-image: linear-gradient(to right, var(--verme), var(--azul));
+    font-weight: 700;
+    font-size: 12pt;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s; 
+    border: none;
+}
+
+main #comeco div button:hover{
+    background-image: linear-gradient(to right, #31c471c7, #6ba7adcb);
+}
+
+main #informaoes-servico #porque-escolher #texto{
+    margin: 0px 70px;
+    position: absolute;
+    top: 46pc;
+}
+
+main #informaoes-servico #porque-escolher #texto h1{
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+main #informaoes-servico #porque-escolher #texto p{
+    max-width: 800px;
+    color: #6b6b6b;
+} 
+
+main #informaoes-servico #porque-escolher ul{
+    margin: 0px 70px;
+    display: flex;
+    list-style: none;
+}
+
+main #informaoes-servico #porque-escolher li {
+   margin-left: 30px;
+}
+
+main #informaoes-servico #porque-escolher li img{
+    margin-bottom: 10px;
+}
+
+main #informaoes-servico #porque-escolher li h2{
+   font-weight: 50;
+}
+
+main #informaoes-servico #porque-escolher li p{
+    color: #6b6b6b;
+ }
+
+main  #artigos{
+    margin-top: 150px;
+}
+
+main #artigos h1{
+   margin: 0px 70px;
+   font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+main #artigos ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 70px;
+  
+}
+
+main #artigos ul li{
+    margin-left: 10px;
+}
+
+main #artigos ul li img{
+    width: 250px;
+}
+
+main #artigos ul li h2{
+   font-size: 20px;
+   font-weight: 100;
+   padding-top: 5px;
+}
+
+main #artigos ul li p{
+    color: #6b6b6b;
+ }
+
+footer{
+    margin-top: 50px;
+    display: flex;
+    background-color: #2D314F;
+    padding: 30px 50px;
+}
+
+footer #redes h1{
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+  
+    font-size: 20px;
+    margin: 0px 50px;
+}
+
+footer #redes ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 50px;
+    margin-top: 20px;
+}
+
+footer #redes ul li img{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+footer #redes ul li img:hover{
+    background-color: #31C471;
+    border-radius: 5px;
+}
+
+footer #rodape ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none; 
+    margin-left: 100px;
+
+}
+
+footer #rodape ul li{
+    color: #fff;
+    margin-top:15px;
+    margin-left: 150px;
+}
+
+footer #rodape ul li:hover{
+    color: #31C471;
+    cursor: pointer;
+}
+
+footer button{
+    margin-left: 200px;
+    background-image: linear-gradient(to right, var(--verme), var(--azul));
+    height: 50px;
+    width: 200px;
+    font-weight: 700;
+    font-size: 12pt;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s; 
+    border: none;
+}
+
+footer button:hover{
+    background-image: linear-gradient(to right, #31c471c7, #6ba7adcb);
+}
+
+main ul div h1{
+    display: none;
+ }  
+
+ main ul div p{
+    display: none;
+ }  
+
+@media (max-width: 1150px) {
+    header nav{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        right: -10%;
+        top: 60px;
+        width: 500px;
+        flex-direction: column;
+        background-color: #2D314F;
+        transition: 0.3s;
+    }
+    
+    header ul{
+        display: block;
+        margin-right: 0px;
+        
+    }
+
+    header li {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 25px;
+
+    }
+
+    header ul li a{
+        color: #fff;
+    }
+
+    header nav span {
+       display: flex;
+       
+    }
+
+    header span {
+        width: 150px;
+       display: flex;
+       justify-content: center;
+       margin-left: 150px;
+       margin-top: 20px;
+       margin-bottom: 20px;
+     }
+    
+     main ul div h1{
+        display: none;
+     }  
+
+     main ul div p{
+        display: none;
+     }  
+
+     main{
+        margin-top: 0px;
+    }
+    
+     header #menu{
+        display: block;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    main #comeco {
+        display: flex;
+        background-image: url(img/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: 700px -100px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    main #comeco img{
+        width: 400px;
+    }
+    
+    main #comeco div h1{
+       text-align: center;
+    }
+    
+    main #comeco div  h1{
+        padding-bottom: 30px;
+        font-size: 50px;
+        max-width: 400px;
+        font-weight: 40;
+    }
+
+    main #informaoes-servico #porque-escolher #texto{
+        margin: 0px 90px;
+        position: absolute;
+        top: 93%;
+    }
+    
+    main #informaoes-servico #porque-escolher #texto h1{
+        font-size: 30px;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+    main #informaoes-servico #porque-escolher #texto p{
+        max-width: 800px;
+        color: #6b6b6b;
+    } 
+    
+    main #informaoes-servico #porque-escolher ul{
+        margin: 0px 70px;
+        margin-top:95px ;
+        display: flex;
+        list-style: none;
+    }
+    
+    main #informaoes-servico #porque-escolher li {
+       margin-left: 30px;
+    }
+    
+    main #informaoes-servico #porque-escolher li img{
+        margin-bottom: 10px;
+    }
+    
+    main #informaoes-servico #porque-escolher li h2{
+       font-weight: 50;
+    }
+    
+    main #informaoes-servico #porque-escolher li p{
+        color: #6b6b6b;
+     }
+
+     main  #artigos{
+        margin-top: 130px;
+    }
+    
+    main #artigos h1{
+       margin: 0px 70px;
+       font-size: 35px;
+        font-weight: 100;
+        margin-bottom: 40px;
+    }
+    
+    main #artigos ul{
+        display: flex;
+        list-style: none;
+        margin: 0px 0px;
+      
+    }
+    
+    main #artigos ul li{
+        margin-left: 35px;
+    }
+    
+    main #artigos ul li img{
+        width: 200px;
+    }
+    
+    main #artigos ul li h2{
+       font-size: 20px;
+       font-weight: 100;
+       padding-top: 5px;
+    }
+    
+    main #artigos ul li p{
+        color: #6b6b6b;
+     }
+
+     footer #redes ul li img{
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    
+    footer #redes ul li img:hover{
+        background-color: #31C471;
+        border-radius: 5px;
+    }
+    
+    footer #rodape ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: none; 
+        margin-left:0px;
+    
+    }
+    
+    footer #rodape ul li{
+        color: #fff;
+        margin-top:10px;
+        margin-left: 150px;
+    }
+    
+    footer #rodape ul li:hover{
+        color: #31C471;
+        cursor: pointer;
+    }
+    
+    footer button{
+        margin-left: 200px;
+        background-image: linear-gradient(to right, var(--verme), var(--azul));
+        height: 50px;
+        width: 200px;
+        font-weight: 700;
+        font-size: 10pt;
+        color: #fff;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s; 
+        border: none;
+    }
+    
+    footer button:hover{
+        background-image: linear-gradient(to right, #31c471c7, #6ba7adcb);
+    }
+}
+
+@media (max-width:1008px) {
+    
+        header nav{
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            right: -10%;
+            top: 60px;
+            width: 500px;
+            flex-direction: column;
+            background-color: #2D314F;
+            transition: 0.3s;
+        }
+        
+        header ul{
+            display: block;
+            margin-right: 0px;
+            
+        }
+    
+        header li {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 25px;
+    
+        }
+    
+        header ul li a{
+            color: #fff;
+        }
+    
+        header nav span {
+           display: flex;
+           
+        }
+    
+        header span {
+            width: 150px;
+           display: flex;
+           justify-content: center;
+           margin-left: 150px;
+           margin-top: 20px;
+           margin-bottom: 20px;
+         }
+        
+         main{
+            margin-top: 0px;
+        }
+        
+         header #menu{
+            display: block;
+            cursor: pointer;
+            margin: 0;
+        }
+    
+        main #comeco {
+            display: flex;
+            background-image: none;
+
+            position: relative;
+            z-index: 1;
+        }
+        
+        main #comeco img{
+            display: none;
+        }
+        
+        main #comeco div h1{
+           text-align: center;
+        }
+        
+        main #comeco div  h1{
+            padding-bottom: 30px;
+            font-size: 50px;
+            max-width: 400px;
+            font-weight: 40;
+        }
+    
+
+        main #informaoes-servico #porque-escolher #texto{
+            display: none;   
+        }
+        
+        main #informaoes-servico #porque-escolher  h1{
+            font-size: 30px;
+            font-weight: 100;
+
+        }
+        main #informaoes-servico #porque-escolher  p{
+            max-width: 800px;
+            color: #6b6b6b;
+        } 
+        
+        main #informaoes-servico #porque-escolher ul{
+            margin: 0px 70px;
+            margin-top:95px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+        
+        main #informaoes-servico #porque-escolher li {
+           margin-top: 30px;
+        }
+        
+        main #informaoes-servico #porque-escolher li img{
+            margin-bottom: 10px;
+        }
+        
+        main #informaoes-servico #porque-escolher li h2{
+           font-weight: 50;
+        }
+        
+        main #informaoes-servico #porque-escolher li p{
+            color: #6b6b6b;
+         }
+    
+         main  #artigos{
+            margin-top: 100px;
+        }
+        
+        main #artigos h1{
+           margin: 0px 70px;
+           font-size: 35px;
+            font-weight: 100;
+            margin-bottom: 40px;
+        }
+        
+        main #artigos ul{
+            display: flex;
+            list-style: none;
+            margin: 0px 0px;
+          
+        }
+        
+        main #artigos ul li{
+            margin-left: 35px;
+        }
+        
+        main #artigos ul li img{
+            width: 150px;
+        }
+        
+        main #artigos ul li h2{
+           font-size: 20px;
+           font-weight: 100;
+           padding-top: 5px;
+        }
+        
+        main #artigos ul li p{
+            color: #6b6b6b;
+         }
+    
+         footer #redes ul li img{
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        
+        footer #redes ul li img:hover{
+            background-color: #31C471;
+            border-radius: 5px;
+        }
+        
+        footer #rodape ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            list-style: none; 
+            margin-right:0px;
+        
+        }
+        
+        footer #rodape ul li{
+            color: #fff;
+            margin-top:10px;
+            margin-left: 0px;
+        }
+        
+        footer #rodape ul li:hover{
+            color: #31C471;
+            cursor: pointer;
+        }
+        
+        footer button{
+            margin-left: 50px;
+            background-image: linear-gradient(to right, var(--verme), var(--azul));
+            height: 50px;
+            width: 200px;
+            font-weight: 700;
+            font-size: 10pt;
+            color: #fff;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s; 
+            border: none;
+        }
+        
+        footer button:hover{
+            background-image: linear-gradient(to right, #31c471c7, #6ba7adcb);
+        }
+
+        main ul div h1{
+            display: none;
+         }  
+    
+         main ul div p{
+            display: none;
+         }  
+}
+
+@media (max-width:796px){
+    header nav{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        right: -10%;
+        top: 60px;
+        width: 500px;
+        flex-direction: column;
+        background-color: #2D314F;
+        transition: 0.3s;
+    }
+    
+    header ul{
+        display: block;
+        margin-right: 0px;
+        
+    }
+
+    header li {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 25px;
+
+    }
+
+    header ul li a{
+        color: #fff;
+    }
+
+    header nav span {
+       display: flex;
+       
+    }
+
+    header span {
+        width: 150px;
+       display: flex;
+       justify-content: center;
+       margin-left: 150px;
+       margin-top: 20px;
+       margin-bottom: 20px;
+     }
+    
+     main{
+        margin-top: 0px;
+    }
+    
+     header #menu{
+        display: block;
+        cursor: pointer;
+        margin: 0;
+    }
+
+
+
+    main #comeco {
+        display: flex;
+        background-image: none;
+
+        position: relative;
+        z-index: 1;
+    }
+    
+    main #comeco img{
+        display: none;
+    }
+    
+    main #comeco div h1{
+       text-align: center;
+    }
+    
+    main #comeco div  h1{
+        padding-bottom: 30px;
+        font-size: 50px;
+        max-width: 400px;
+        font-weight: 40;
+    }
+
+    main #informaoes-servico #porque-escolher #texto{
+        display: none;
+        margin: 0px 90px;
+        position: absolute;
+        top: 88%;
+    }
+    
+    main #informaoes-servico #porque-escolher #texto h1{
+        font-size: 30px;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+    main #informaoes-servico #porque-escolher #texto p{
+        max-width: 800px;
+        color: #6b6b6b;
+    } 
+    
+    main #informaoes-servico #porque-escolher ul{
+        margin: 0px 70px;
+        margin-top:95px ;
+        display: flex;
+        list-style: none;
+    }
+    
+    main #informaoes-servico #porque-escolher li {
+       margin-left: 30px;
+    }
+    
+    main #informaoes-servico #porque-escolher li img{
+        margin-bottom: 10px;
+    }
+    
+    main #informaoes-servico #porque-escolher li h2{
+       font-weight: 50;
+    }
+    
+    main #informaoes-servico #porque-escolher li p{
+        color: #6b6b6b;
+     }
+
+     main ul div h1{
+        display: block;
+     }  
+
+     main ul div p{
+        display:block;
+     }  
+     main  #artigos{
+        margin-top: 100px;
+    }
+    
+    main #artigos h1{
+       margin: 0px 70px;
+       font-size: 35px;
+        font-weight: 100;
+        margin-bottom: 40px;
+    }
+    
+    main #artigos ul{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+       
+      
+    }
+    
+    main #artigos ul li{
+        margin-left: 35px;
+        margin-top: 50px;
+    }
+    
+    main #artigos ul li img{
+        width: 350px;
+    }
+    
+    main #artigos ul li h2{
+       font-size: 20px;
+       font-weight: 100;
+       padding-top: 5px;
+    }
+    
+
+
+     footer{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #2D314F;
+        padding: 30px 50px;
+    }
+
+     footer #redes ul li img{
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    
+    footer #redes ul li img:hover{
+        background-color: #31C471;
+        border-radius: 5px;
+    }
+    
+    footer #rodape ul{
+        display: flex;
+        flex-direction: column;
+        
+        list-style: none; 
+        margin-left:40px;
+        margin-top: 20px;
+    
+    }
+    
+    footer #rodape ul li{
+        color: #fff;
+        margin-top:20px;
+        font-size: 15pt;
+    }
+    
+    footer #rodape ul li:hover{
+        color: #31C471;
+        cursor: pointer;
+    }
+    
+    footer button{
+        margin-top: 30px;
+        background-image: linear-gradient(to right, var(--verme), var(--azul));
+        height: 50px;
+        width: 200px;
+        font-weight: 700;
+        font-size: 15pt;
+        color: #fff;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s; 
+        border: none;
+    }
+    
+    footer button:hover{
+        background-image: linear-gradient(to right, #31c471c7, #6ba7adcb);
+    }
+}
